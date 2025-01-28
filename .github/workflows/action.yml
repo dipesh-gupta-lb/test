@@ -1,0 +1,17 @@
+name: Echo Message
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  echo_message:
+    runs-on: ubuntu-latest
+    
+    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v2
+        
+      - name: Echo message
+        run: echo "Hello, this is a simple GitHub Action!"
